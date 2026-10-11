@@ -4,6 +4,8 @@ Fast, native, and read-only disk usage analyzer and cleanup advisor for macOS.
 
 DiskLens combines a high-performance **C++20 multi-threaded scanning core** (using Darwin's native `getattrlistbulk(2)` system call) with a modern **PySide6 / Qt 6 desktop interface** to analyze millions of files in seconds without high memory usage.
 
+![Screenshot](./screenshot.png)
+
 ---
 
 ## Key Features
