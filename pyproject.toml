@@ -1,0 +1,26 @@
+[build-system]
+requires = ["scikit-build-core>=0.9.0", "nanobind>=2.0.0"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "disklens"
+version = "0.1.0"
+description = "Fast, read-only disk usage analyzer for macOS"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "mac_cleaner" }]
+dependencies = [
+    "PySide6>=6.5.0",
+]
+
+[project.scripts]
+disklens = "disklens.__main__:main"
+
+[tool.scikit-build]
+cmake.version = ">=3.20"
+ninja.version = ">=1.10"
+build-dir = "build/{wheel_tag}"
+wheel.packages = ["disklens"]
+
+[tool.scikit-build.cmake.define]
+CMAKE_OSX_DEPLOYMENT_TARGET = "13.0"

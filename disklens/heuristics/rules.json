@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "node_modules",
+    "category": "Build Artifact",
+    "safety": "safe",
+    "description": "Dependencies for Node.js / JavaScript projects. Can be safely reinstalled via npm/yarn/pnpm install.",
+    "action": "Run 'npm clean' or re-install dependencies if needed."
+  },
+  {
+    "id": 2,
+    "name": "target",
+    "category": "Build Artifact",
+    "safety": "safe",
+    "description": "Cargo build output for Rust projects. Can be regenerated with 'cargo build'.",
+    "action": "Run 'cargo clean' inside project root."
+  },
+  {
+    "id": 3,
+    "name": "build",
+    "category": "Build Artifact",
+    "safety": "safe",
+    "description": "Compiled binaries and build output for CMake, Gradle, Swift or Python projects.",
+    "action": "Clean project build folder."
+  },
+  {
+    "id": 4,
+    "name": "DerivedData",
+    "category": "Xcode Cache",
+    "safety": "safe",
+    "description": "Xcode intermediate build products, indexes, and symbol caches.",
+    "action": "Quit Xcode and remove DerivedData or manage via Xcode Settings ▸ Locations."
+  },
+  {
+    "id": 5,
+    "name": "Caches",
+    "category": "App Cache",
+    "safety": "safe",
+    "description": "Temporary application caches (Homebrew, npm, pip, browsers, Spotify, etc.).",
+    "action": "Quit application and clear cache via app preferences or Finder."
+  },
+  {
+    "id": 6,
+    "name": ".Trash",
+    "category": "Trash",
+    "safety": "safe",
+    "description": "Files currently in your macOS Trash.",
+    "action": "Empty Trash in Finder (Finder ▸ Empty Trash)."
+  },
+  {
+    "id": 7,
+    "name": "Installers",
+    "category": "Installer / Image",
+    "safety": "review",
+    "description": "Downloaded disk images (.dmg), packages (.pkg), or OS firmware images (.ipsw).",
+    "action": "Delete disk image if installation is already complete."
+  },
+  {
+    "id": 8,
+    "name": "Python Environment / Cache",
+    "category": "Python Cache",
+    "safety": "safe",
+    "description": "Python bytecode (__pycache__), virtualenvs (.venv), or pytest/mypy caches.",
+    "action": "Safe to delete; bytecode is regenerated automatically on execution."
+  },
+  {
+    "id": 9,
+    "name": "Pods",
+    "category": "Build Artifact",
+    "safety": "safe",
+    "description": "CocoaPods dependency workspace. Can be regenerated via 'pod install'.",
+    "action": "Run 'pod install' if dependencies are needed again."
+  }
+]
